@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/bottomnavbar.dart';
 import 'package:flutter_widget/cliprect.dart';
 import 'package:flutter_widget/colrow.dart';
 import 'package:flutter_widget/expanded.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const FgestureDetector(),
+      home: const FbottomNavBar(),
     );
   }
 }
