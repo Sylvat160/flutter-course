@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/expanded.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,14 +16,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Widget'),
+      home: const Fexpanded(),
     );
   }
 }
 
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key, required this.title});
+class Fcontainer extends StatelessWidget {
+  const Fcontainer({super.key, required this.title});
 
   final String title;
 
