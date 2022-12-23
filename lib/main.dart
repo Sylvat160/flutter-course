@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/alertdialog.dart';
 import 'package:flutter_widget/animatecontainer.dart';
 import 'package:flutter_widget/bottomnavbar.dart';
 import 'package:flutter_widget/cliprect.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: const FmediaQuery(),
+      home: const FalertDialog(),
     );
   }
 }
