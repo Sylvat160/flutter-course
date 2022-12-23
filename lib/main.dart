@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widget/bottomnavbar.dart';
 import 'package:flutter_widget/cliprect.dart';
 import 'package:flutter_widget/colrow.dart';
+import 'package:flutter_widget/drawer.dart';
 import 'package:flutter_widget/expanded.dart';
 import 'package:flutter_widget/gesturedetector.dart';
 import 'package:flutter_widget/gridview.dart';
@@ -19,11 +20,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Widget',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
       ),
-      home: const FbottomNavBar(),
+      home: const Fdrawer(),
     );
   }
 }

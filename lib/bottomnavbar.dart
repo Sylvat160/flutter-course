@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/appbar.dart';
 import 'package:flutter_widget/pages/account.dart';
 import 'package:flutter_widget/pages/home.dart';
 import 'package:flutter_widget/pages/message.dart';
@@ -30,6 +31,26 @@ class _FbottomNavBarState extends State<FbottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.deepPurple[300],
+        elevation: 5,
+        title: Text('A P P B A R'),
+        centerTitle: true,
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () {},
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.person),
+            onPressed: () {},
+          ),
+          // IconButton(
+          //   icon: Icon(Icons.more_vert),
+          //   onPressed: () {},
+          // ),
+        ],
+      ),
       body: Center(
         child: ClipRRect(
           borderRadius: BorderRadius.circular(30),
