@@ -9,6 +9,7 @@ import 'package:flutter_widget/gesturedetector.dart';
 import 'package:flutter_widget/gridview.dart';
 import 'package:flutter_widget/imgs.dart';
 import 'package:flutter_widget/listviewbuilder.dart';
+import 'package:flutter_widget/mediaqueries.dart';
 import 'package:flutter_widget/sliverappbar.dart';
 import 'package:flutter_widget/tabbar.dart';
 
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: const FanimateContainer(),
+      home: const FmediaQuery(),
     );
   }
 }
