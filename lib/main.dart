@@ -14,6 +14,7 @@ import 'package:flutter_widget/mediaqueries.dart';
 import 'package:flutter_widget/pageview.dart';
 import 'package:flutter_widget/richtext.dart';
 import 'package:flutter_widget/sliverappbar.dart';
+import 'package:flutter_widget/stack.dart';
 import 'package:flutter_widget/tabbar.dart';
 import 'package:flutter_widget/text.dart';
 import 'package:flutter_widget/timer.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: const FpageView(),
+      home: const Fstack(),
     );
   }
 }
