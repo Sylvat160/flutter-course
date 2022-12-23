@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/animatecontainer.dart';
 import 'package:flutter_widget/bottomnavbar.dart';
 import 'package:flutter_widget/cliprect.dart';
 import 'package:flutter_widget/colrow.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: const FtabBar(),
+      home: const FanimateContainer(),
     );
   }
 }
