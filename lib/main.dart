@@ -9,6 +9,7 @@ import 'package:flutter_widget/expanded.dart';
 import 'package:flutter_widget/gesturedetector.dart';
 import 'package:flutter_widget/gridview.dart';
 import 'package:flutter_widget/imgs.dart';
+import 'package:flutter_widget/input.dart';
 import 'package:flutter_widget/listviewbuilder.dart';
 import 'package:flutter_widget/mediaqueries.dart';
 import 'package:flutter_widget/pageview.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: const Fstack(),
+      home: const FuserInput(),
     );
   }
 }
