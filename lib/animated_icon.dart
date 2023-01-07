@@ -7,7 +7,7 @@ class FanimatedIcon extends StatefulWidget {
   State<FanimatedIcon> createState() => _FanimatedIconState();
 }
 
-class _FanimatedIconState extends State<FanimatedIcon> {
+class _FanimatedIconState extends State<FanimatedIcon> with TickerProviderStateMixin {
   late AnimationController _animationController;
   @override
   void initState() {
