@@ -18,8 +18,16 @@ class _FanimatedIconState extends State<FanimatedIcon> {
     );
     _animationController.repeat();
   }
-
-  void
+  bool played = false;
+  void _iconTapped(){
+    if(played == false){
+      _animationController.forward();
+      played = true;
+    }else {
+      _animationController.reverse();
+      played = false;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
