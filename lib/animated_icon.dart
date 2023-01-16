@@ -7,7 +7,8 @@ class FanimatedIcon extends StatefulWidget {
   State<FanimatedIcon> createState() => _FanimatedIconState();
 }
 
-class _FanimatedIconState extends State<FanimatedIcon> with TickerProviderStateMixin {
+class _FanimatedIconState extends State<FanimatedIcon>
+    with TickerProviderStateMixin {
   late AnimationController _animationController;
   @override
   void initState() {
@@ -18,12 +19,13 @@ class _FanimatedIconState extends State<FanimatedIcon> with TickerProviderStateM
     );
     _animationController.repeat();
   }
+
   bool played = false;
-  void _iconTapped(){
-    if(played == false){
+  void _iconTapped() {
+    if (played == false) {
       _animationController.forward();
       played = true;
-    }else {
+    } else {
       _animationController.reverse();
       played = false;
     }
@@ -34,7 +36,15 @@ class _FanimatedIconState extends State<FanimatedIcon> with TickerProviderStateM
     return Scaffold(
         body: Center(
       child: GestureDetector(
-        onTap: _iconTapped,
+        onTap: () {
+          if (played == false) {
+            _animationController.forward();
+            played = true;
+          } else {
+            _animationController.reverse();
+            played = false;
+          }
+        },
         child: AnimatedIcon(
           icon: AnimatedIcons.play_pause,
           progress: _animationController,
