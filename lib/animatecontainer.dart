@@ -30,7 +30,7 @@ class _FanimateContainerState extends State<FanimateContainer> {
         backgroundColor: Colors.deepOrange[400],
         body: Center(
           child: AnimatedContainer(
-            duration: Duration(seconds: 1),
+            duration: const Duration(seconds: 1),
             curve: Curves.fastOutSlowIn,
             alignment: Alignment(boxX , boxY),
             height: boxHeight,
